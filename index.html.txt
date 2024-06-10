@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html>
 <head>
-<title>Hello, world!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+            color: #fff;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .experience-list, .interests-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            color: #333;
+        }
+
+        .experience-list li, .interests-list li {
+            margin-bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .resume-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-<h1>Hello, world!</h1>
-<p>Sunhee의 홈페이지에 오신 것을 환영합니다!</p>
+    <div class="container">
+        <h1 class="resume-title">이력서</h1>
+        <img src="inside.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="section-header">
+            <h1>김현민 (Kim hyun min)</h1>
+            <p style="color: #000;">Email: kercy04@dongyang.ac.kr</p>
+        </div>
+
+        <div class="section">
+            <h2>기술 스택</h2>
+            <p style="color: #000;">Python, JavaScript, HTML/CSS, Git</p>
+        </div>
+
+        <div class="section">
+            <h2>대학 정보</h2>
+            <p style="color: #000;">동양미래대학교 - 컴퓨터소프트웨어공학과</p>
+            <p style="color: #000;">2024년 입학</p>
+        </div>
+
+        <div class="section">
+            <h2>기술개발경험</h2>
+            <ul class="experience-list">
+                <li>html과 css를 사용하여 홈페이지 개발</li>
+                <li>번역기 프로그램 개발</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>관심기술분야</h2>
+            <ul class="interests-list">
+                <li>웹 개발</li>
+                <li>소프트웨어 엔지니어</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
